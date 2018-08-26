@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+
+#calculator{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background: silver;
+    height: 490px;
+    width: 430px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+
+    #calculatorHeader{
+        position: relative;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+        height: 50px;
+        background: black;
+        cursor: move;
+
+        p{
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+    }
+
+    #calculator-main{
+        padding: 10px;
+
+        button{
+            margin-left: 12px;
+            margin-top: 10px;
+            width: 65px;
+            height: 65px;
+            font-size: 1.2em;
+            font-weight: 600;
+            background: rgb(2, 101, 231);
+            border: none;
+            color: white;
+            transition: all 0.2s;
+            border-radius: 5px;
+
+            &:active{
+                box-shadow: 0px 0px 0px black;
+            }
+        }
+
+        .math{
+            background: rgb(10, 185, 238);
+        }
+
+        .equal{
+            background: rgb(255, 156, 7);
+        }
+
+        .clear{
+            background: rgb(194, 50, 14);
+        }
+
+        .zero{
+            width: 146px;
+        }
+
+        .backspace{
+            background:rgb(248, 172, 30);
+        }
+
+        input{
+            width: 90%;
+            margin-top: 0px;
+            font-size: 1.3em;
+            padding: 5px;
+            text-align: right;
+            margin-bottom: 10px;
+            font-weight: 600;
+            margin-left: 15px;
+            background: black;
+            color: white;
+            border: none;
+            outline: none;
+        }
+        
+        #allCalculations{
+            color: black;
+            margin-top: 10px;
+            background: rgb(224, 222, 222);
+        }
+    }
+}

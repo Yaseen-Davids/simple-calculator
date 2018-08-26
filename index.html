@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="calculator">
+
+      <div id="calculatorHeader">
+        <p>Mathify</p>
+      </div>
+
+      <div id="calculator-main">
+        <input type="text" value="" id="allCalculations" readonly>
+        <input type="text" value="0" id="calculations" readonly>
+      
+        <br>
+
+        <button data-btn-value="7" onclick="calculator(this)">7</button>
+        <button data-btn-value="8" onclick="calculator(this)">8</button>
+        <button data-btn-value="9" onclick="calculator(this)">9</button>
+        <button data-btn-operation="/" onclick="operation_val(this)" class="math">/</button>
+        <button onclick="clearCalculator()" class="clear">CE</button>
+
+        <br>
+
+        <button data-btn-value="4" onclick="calculator(this)">4</button>
+        <button data-btn-value="5" onclick="calculator(this)">5</button>
+        <button data-btn-value="6" onclick="calculator(this)">6</button>
+        <button data-btn-operation="*" onclick="operation_val(this)" class="math">×</button>
+        <button onclick="clearInput()" class="clear">C</button>
+
+        <br>
+
+        <button data-btn-value="1" onclick="calculator(this)">1</button>
+        <button data-btn-value="2" onclick="calculator(this)">2</button>
+        <button data-btn-value="3" onclick="calculator(this)">3</button>
+        <button data-btn-operation="-" onclick="operation_val(this)" class="math">-</button>
+        <button onclick="backspace()" class="backspace">&larr;</button>
+
+        <br>
+
+        <button data-btn-value="0" class="zero" onclick="calculator(this)">0</button>
+        <button data-btn-value="." onclick="calculator(this)">.</button>
+        <button data-btn-operation="+" onclick="operation_val(this)" class="math">+</button>
+        <button data-btn-operation="=" onclick="equal_val(this)" class="equal">=</button>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
