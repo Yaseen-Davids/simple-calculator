@@ -1,5 +1,7 @@
+// SET DRAG ELEMENT
 dragElement(document.getElementById("calculator"));
 
+// FUNCTION FOR DRAG Element
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "Header")) {
@@ -106,5 +108,28 @@ function backspace(){
   length--;
 
   calNumber.value = calNumber.value.substring(0, length);
+
+}
+
+// Declare button to show calculator
+let showCalBtn = document.getElementById('show_calculator');
+
+// if button to show calculator clicked, run function
+showCalBtn.onclick = function(){
+
+  // Declare calculator
+  let calculator = document.getElementById("calculator");
+
+  // if calculator is hidden, make it visible
+  if (calculator.style.transform == "scale(1)"){
+    showCalBtn.innerText = "Show Calculator";
+    calculator.style.transform = "scale(0)";
+  }
+
+  // if calculator is visible, hide it
+  else{
+    calculator.style.transform = "scale(1)";
+    showCalBtn.innerText = "Hide Calculator";
+  }
 
 }

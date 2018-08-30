@@ -5,52 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS STYLESHEET -->
   <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
 
+  <!-- MAIN CONTAINER -->
   <div id="container">
 
+    <!-- SHOW CALCULATOR BUTTON -->
+    <div id="show_calculator_btn"><button id="show_calculator">Show Calculator</button></div>
+
+    <!-- CALCULATOR -->
     <div id="calculator">
 
+      <!-- CALCULATOR HEADER -->
       <div id="calculatorHeader">
         <p>Mathify</p>
       </div>
 
+      <!-- MAIN CALCULATOR CONTENT -->
       <div id="calculator-main">
+        <!-- OPERATIONS INPUT -->
         <input type="text" value="" id="allCalculations" readonly>
+        <!-- VALUE AND ANSWER INPUT -->
         <input type="text" value="0" id="calculations" readonly>
       
         <br>
 
+        <!-- BUTTON 7 -->
         <button data-btn-value="7" onclick="calculator(this)">7</button>
+        <!-- BUTTON 8 -->
         <button data-btn-value="8" onclick="calculator(this)">8</button>
+        <!-- BUTTON 9 -->
         <button data-btn-value="9" onclick="calculator(this)">9</button>
+        <!-- DIVIDE BUTTON -->
         <button data-btn-operation="/" onclick="operation_val(this)" class="math">/</button>
+        <!-- CLEAR EVERYTHING BUTTON -->
         <button onclick="clearCalculator()" class="clear">CE</button>
 
         <br>
 
+         <!-- BUTTON 4 -->
         <button data-btn-value="4" onclick="calculator(this)">4</button>
+        <!-- BUTTON 5 -->
         <button data-btn-value="5" onclick="calculator(this)">5</button>
+        <!-- BUTTON 6 -->
         <button data-btn-value="6" onclick="calculator(this)">6</button>
+        <!-- MULTIPLY BUTTON -->
         <button data-btn-operation="*" onclick="operation_val(this)" class="math">×</button>
+        <!-- CLEAR INPUT BUTTON -->
         <button onclick="clearInput()" class="clear">C</button>
 
         <br>
 
+        <!-- BUTTON 1 -->
         <button data-btn-value="1" onclick="calculator(this)">1</button>
+        <!-- BUTTON 2 -->
         <button data-btn-value="2" onclick="calculator(this)">2</button>
+        <!-- BUTTON 3 -->
         <button data-btn-value="3" onclick="calculator(this)">3</button>
+        <!-- SUBTRACT BUTTON -->
         <button data-btn-operation="-" onclick="operation_val(this)" class="math">-</button>
+        <!-- BACKSPACE BUTTON -->
         <button onclick="backspace()" class="backspace">&larr;</button>
 
         <br>
 
+        <!-- BUTTON 0 -->
         <button data-btn-value="0" class="zero" onclick="calculator(this)">0</button>
+        <!-- PERIOD BUTTON -->
         <button data-btn-value="." onclick="calculator(this)">.</button>
+        <!-- ADD BUTTON -->
         <button data-btn-operation="+" onclick="operation_val(this)" class="math">+</button>
+        <!-- EQUAL BUTTON -->
         <button data-btn-operation="=" onclick="equal_val(this)" class="equal">=</button>
 
       </div>
@@ -59,6 +88,7 @@
 
   </div>
   
+  <!-- JAVASCRIPT -->
   <script src="./js/script.js"></script>
   
 </body>
